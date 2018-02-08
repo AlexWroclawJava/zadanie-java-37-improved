@@ -19,9 +19,6 @@ public class PersonWprowadz {
         person.setPesel(scanner.nextLine());
 
         System.out.println("\nWprowadzona osoba to: ");
-        System.out.println("Imie: " + person.getFirstName());
-        System.out.println("Nazwisko: " + person.getLastName());
-        System.out.println("Wiek: " + person.getAge());
-        System.out.println("Pesel: " + person.getPesel());
+        System.out.println(person.toString());
     }
 }

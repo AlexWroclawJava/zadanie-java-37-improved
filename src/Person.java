@@ -60,4 +60,12 @@ public class Person {
     public void setPesel(String pesel) {
         this.pesel = pesel;
     }
+
+    @Override
+    public String toString() {
+        return "imię=" + firstName + '\n' +
+                "nazwisko=" + lastName + '\n' +
+                "wiek=" + age + '\n' +
+                "pesel=" + pesel;
+    }
 }
