@@ -7,12 +7,12 @@ public class Person {
     private int age;
     private String pesel;
 
-    public Person(String firstName, String lastName, int age, String pesel) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.pesel = pesel;
-    }
+      public Person(String firstName, String lastName, int age, String pesel) throws IncorrectAgeException, IncorrectPeselException, NameUndefinedException {
+            setFirstName(firstName);
+            setLastName(lastName);
+            setAge(age);
+            setPesel(pesel);
+        }
 
     public Person() {
     }
